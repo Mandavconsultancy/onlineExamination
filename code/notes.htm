@@ -1,0 +1,57 @@
+<html>
+<head>
+<title>Quiz v1.0</title>
+<style type="text/css">
+<!--
+p {  font-family: Arial, Helvetica, sans-serif; font-size: 12px}
+a {  color: #003366}
+a:hover {  color: #0066CC}
+-->
+</style>
+</head>
+
+<body bgcolor="#FFFFFF" text="#000000">
+<p><b><font size="3">PHP-MySQL-Quiz 1.0</font></b></p>
+<p><a href="#1">requirements</a> | <a href="#2">installation</a> | <a href="#3">licence</a>
+  | <a href="#4">disclaimer</a></p>
+<p><b>Intro:</b></p>
+<p> If you want to use this program on a website you can for free. </a>
+  . And don`t forget to rate the script on www.hotscripts.com!</p>
+<p><b><a name="1"></a>Requirements:</b></p>
+<p>You will need a webserver which has installed PHP 4, and mySQL version 3.2
+  upwards.</p>
+<p><b><a name="2"></a>Installation:</b></p>
+<p>1. Unzip the.php and .css files and place them on your webserver (or locally,
+  as you will have to make some changes and then upload) in a directory called
+  quiz or whatever. Put the quiz1.php file into an html template or page of your
+  site. This is what the public see. The other files (excluding quiz.sql and this
+  file which should not be uploaded) are administration, and should be protected
+  with some level of user authentication.</p>
+<p>2. Open <b>config.php</b> and change the variables to your server specification.</p>
+<p>3. You need to create the table quiz in your mySQL database. (You can alter
+  the table name, but you need to change the entry in config.php, and the table
+  name in quiz.sql.) Either via telnet, or using a program such as <a href="http://www.anse.de/mysqlfront/">mySQLfront</a>,
+  or <a href="http://phpmyadmin.sourceforge.net">phpMyAdmin</a> enter the information
+  stored in <b>quiz.sql</b>. You can create a separate database for the quiz if
+  you like, it`s up to you.</p>
+<p>That`s it!</p>
+<p>Optional extras:</p>
+<p>Password proctection is best done with .htaccess and .htpassword files. There
+  are tutorials out there to help.</p>
+<p>You can move the config.php file to another directory if you want to make it
+  safer - just remember to alter the include( ) statement in dbconnect.php.</p>
+<p><b><a name="3"></a>Licence:</b></p>
+<p>This quiz is free. Please leave the copyright notice intact. You may alter
+  the scripts as you see fit. </p>
+<p><b><a name="4"></a>Disclaimer:</b></p>
+<p>All and any use or modification of this program is at the user`s risk. No guarantees
+  are made on the security of these scripts with regard to any webserver or other
+  network.</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+</body>
+</html>
