@@ -20,18 +20,20 @@
 									$i=0;
 									while ($row = mysql_fetch_array($display)) 
 									{
-										
-									$i++;
-									$id = $row["id"];
-									$question = $row["question"];
-									$opt1 = $row["opt1"];
-									$opt2 = $row["opt2"];
-									$opt3 = $row["opt3"];
-									$answer = $row["answer"];		
+											
+										$i++;
+										$id = $row["id"];
+										$question = $row["question"];
+										$opt1 = $row["opt1"];
+										$opt2 = $row["opt2"];
+										$opt3 = $row["opt3"];
+										$opt4 = $row["opt4"];
+										$answer = $row["answer"];		
 									?>						
 									<div class="tab-pane panel panel-info <?php if($i==1){echo "active"; } ?>" id="q<?php echo $i; ?>">										
 									 <div class="alert alert-info">Q<?php echo $i; ?>:  <?php echo $question; ?>  </div>
 										<div class="panel-body">
+										
 											<div class="form-inline">
 												<div class="controls-row">														
 													<label class="radio inline">
@@ -39,7 +41,8 @@
 													</label>
 													<label class="control-label"><?php echo $opt1 ?></label> 
 												</div>
-											</div>
+											</div>										
+											
 											<div class="form-inline">
 												<div class="controls-row">													
 													<label class="radio inline">
@@ -47,18 +50,26 @@
 													</label>
 													<label class="control-label"><?php echo $opt2 ?></label> 
 												</div>
-											</div>										
+											</div>		
+												
 											<div class="form-inline">
-												<div class="controls-row">
-														
+												<div class="controls-row">														
 														<label class="radio inline">
 															<input type='radio' class="fon" name='ans[<?php echo $i; ?>]' value="<?php echo $opt3; ?>">
-															 
 														</label>
 														<label class="control-label"><?php echo $opt3 ?></label>
 												<input type='radio' class="fon hidden" checked="checked" name='ans[<?php echo $i; ?>]' value="none">
 												</div>
-											</div>									 
+											</div>
+											
+											<div class="form-inline">
+												<div class="controls-row">														
+													<label class="radio inline">
+														<input type='radio' class="fon" name='ans[<?php echo $i; ?>]' value="<?php echo $opt4; ?>">
+													</label>
+													<label class="control-label"><?php echo $opt4 ?></label>
+												 </div>
+											</div>											
 										</div>
 									</div>							  
 								<?php	}?>
